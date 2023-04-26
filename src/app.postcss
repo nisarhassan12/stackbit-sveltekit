@@ -1,0 +1,477 @@
+/* Write your global styles here, in PostCSS syntax */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--white: #ffffff;
+	--black: #000000;
+
+	--orchid: #e537c0;
+	--orange: #ee8660;
+	--lavender: #ad37e5;
+
+	--hsl-mz-orchid: 313deg 77% 56%;
+	--hsl-mz-lavender: 281deg 77% 56%;
+	--hsl-mz-charcoal: 246deg 13% 15%;
+	--hsl-mz-purple: 257deg 100% 65%;
+	--hsl-mz-purpler: 257deg 100% 55%;
+	--hsl-mz-purple-dark: 257deg 48% 35%;
+	--hsl-mz-purple-darker: 248deg 63% 21%;
+	--hsl-mz-purple-darkest: 238deg 77% 8%;
+	--hsl-mz-turquois: 184deg 74% 55%;
+	--hsl-mz-green: 144deg 84% 45%;
+	--hsl-default-focus: 257deg 28% 15%;
+
+	--shadow-color: 237deg 100% 1%;
+	--shadow-dissipate: rgb(0 0 0 / 7%) 0px 20px 53px, rgb(0 0 0 / 4%) 0px 4px 15.9779px,
+		rgb(0 0 0 / 2%) 0px 2px 6.63642px, rgb(0 0 0 / 1%) 0px 0px 2.40026px;
+	--shadow-elevation-low: 0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.34),
+		0.4px 0.8px 1px -1.2px hsl(var(--shadow-color) / 0.34),
+		1px 2px 2.5px -2.5px hsl(var(--shadow-color) / 0.34);
+	--shadow-elevation-medium: 0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.36),
+		0.8px 1.6px 2px -0.8px hsl(var(--shadow-color) / 0.36),
+		2.1px 4.1px 5.2px -1.7px hsl(var(--shadow-color) / 0.36),
+		5px 10px 12.6px -2.5px hsl(var(--shadow-color) / 0.36);
+	--shadow-elevation-high: 0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.34),
+		1.5px 2.9px 3.7px -0.4px hsl(var(--shadow-color) / 0.34),
+		2.7px 5.4px 6.8px -0.7px hsl(var(--shadow-color) / 0.34),
+		4.5px 8.9px 11.2px -1.1px hsl(var(--shadow-color) / 0.34),
+		7.1px 14.3px 18px -1.4px hsl(var(--shadow-color) / 0.34),
+		11.2px 22.3px 28.1px -1.8px hsl(var(--shadow-color) / 0.34),
+		17px 33.9px 42.7px -2.1px hsl(var(--shadow-color) / 0.34),
+		25px 50px 62.9px -2.5px hsl(var(--shadow-color) / 0.34);
+
+	--secondary-gradient: linear-gradient(
+		270deg,
+		hsl(242deg 55% 52%) 0%,
+		hsl(214deg 100% 44%) 11%,
+		hsl(210deg 100% 48%) 22%,
+		hsl(205deg 100% 49%) 33%,
+		hsl(200deg 100% 48%) 44%,
+		hsl(193deg 100% 46%) 56%,
+		hsl(185deg 100% 42%) 67%,
+		hsl(176deg 100% 42%) 78%,
+		hsl(168deg 100% 44%) 89%,
+		hsl(147deg 80% 68%) 100%
+	);
+}
+
+body.dark,
+*[data-theme='dark'] {
+	--bg: #111111;
+	--bg-nav: #111111d9;
+	--card: #161616;
+	--card-light: #181818;
+	--divider: #222222;
+	--divider-light: #343434;
+
+	--logo: var(--white);
+
+	--important: #eeeeee;
+	--sub: #bbbbbb;
+	--body: #999;
+	--light: #555;
+
+	--default: 0 0.625rem 1.5rem 0 rgba(0, 0, 0, 0.4);
+	--button-ghost: 0 0.625rem 1rem 0 #ff008f36;
+	--button-hover: rgb(246, 136, 132, 0.14) 0px 0px 0px 8px;
+
+	--text-gradient: linear-gradient(
+		to right bottom,
+		rgb(255, 255, 255) 25%,
+		rgba(255, 255, 255, 0.5)
+	);
+
+	--primary-gradient: linear-gradient(
+		270deg,
+		hsl(270deg 68% 58%) 0%,
+		hsl(287deg 59% 55%) 11%,
+		hsl(303deg 54% 53%) 22%,
+		hsl(315deg 65% 57%) 33%,
+		hsl(325deg 74% 60%) 44%,
+		hsl(333deg 81% 64%) 56%,
+		hsl(340deg 86% 67%) 67%,
+		hsl(348deg 88% 70%) 78%,
+		hsl(355deg 88% 73%) 89%,
+		hsl(3deg 86% 74%) 100%
+	);
+}
+
+body.light,
+*[data-theme='light'] {
+	--bg: #fdfdfd;
+	--bg-nav: #ffffffb3;
+	--card: #ffffff;
+	--card-light: #f9f9f9;
+	--divider: #e9e9e9;
+	--divider-light: #eee;
+	--divider-dark: #ccc;
+
+	--logo: var(--black);
+
+	--important: #010101;
+	--sub: #121212;
+	--body: #666666;
+	--light: #999;
+
+	--default: 0 0.625rem 1.5rem 0rem rgba(0, 0, 0, 0.08);
+	--button-ghost: 0 0.625rem 1rem 0 #ff008f36;
+	--button-hover: rgb(246, 136, 132, 0.14) 0px 0px 0px 8px;
+
+	--text-gradient: linear-gradient(to right bottom, rgb(0, 0, 0) 25%, rgba(0, 0, 0, 0.5));
+
+	--primary-gradient: linear-gradient(
+		270deg,
+		rgb(146, 57, 234) 0%,
+		rgb(181, 61, 214) 11%,
+		rgb(205, 59, 197) 22%,
+		rgb(222, 63, 182) 33%,
+		rgb(235, 61, 163) 44%,
+		rgb(244, 75, 151) 56%,
+		rgb(241, 85, 137) 67%,
+		rgb(241, 89, 120) 78%,
+		rgb(246, 114, 125) 89%,
+		rgb(242, 108, 101) 100%
+	);
+
+	.invert-on-light {
+		filter: invert(100%);
+	}
+}
+
+*,
+*::before,
+*::after {
+	@apply m-0 p-0;
+	box-sizing: inherit;
+}
+
+html {
+	@apply box-border;
+	scroll-padding-top: 5rem;
+	font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
+body {
+	@apply text-body bg-bg text-base font-normal antialiased;
+	font-family: 'Inter Var', sans-serif;
+}
+
+a {
+	@apply cursor-pointer underline;
+}
+
+/* ------------------------------------------------ */
+/* ----- Links and Buttons ----- */
+/* ------------------------------------------------ */
+
+a,
+button,
+svg,
+path {
+	@apply transition-all duration-200 delay-[50ms];
+}
+
+a,
+button,
+input[type='submit'] {
+	@apply cursor-pointer;
+	svg {
+		@apply pointer-events-none;
+	}
+}
+
+a {
+	word-wrap: break-word;
+	&.active {
+		@apply text-important;
+	}
+}
+
+a:not([class]) {
+	@apply underline;
+
+	&:hover,
+	&:focus {
+		@apply text-important;
+		text-decoration-color: transparent;
+	}
+}
+
+.icon-link {
+	&.highlight {
+		&::after {
+			content: '';
+			@apply block h-1.5 w-1.5 -ml-1.5 -mt-4 rounded-full;
+			background: var(--primary-gradient);
+		}
+	}
+
+	&:hover,
+	&:focus {
+		@apply text-important;
+	}
+}
+
+.btn {
+	@apply no-underline;
+
+	.arrow {
+		@apply hidden ml-2 h-3 w-3;
+	}
+
+	span {
+		@apply z-10;
+	}
+
+	&-sm:not(.btn-text) {
+		@apply py-2.5 px-3.5 text-xs;
+	}
+
+	&-md {
+		@apply py-3 px-6 md:py-4 md:px-8;
+
+		@media (max-width: 520px) {
+			@apply w-full py-4;
+		}
+	}
+
+	&-cta {
+		.arrow {
+			@apply block;
+		}
+	}
+
+	&-ghost {
+		@apply relative bg-bg border border-solid border-transparent;
+	}
+
+	&-text {
+		@apply relative pb-2 overflow-hidden text-sub;
+
+		&::before {
+			content: '';
+			@apply absolute bottom-0 inset-x-0 h-[1px] w-full;
+			background: var(--primary-gradient);
+		}
+
+		&:hover,
+		&:focus {
+			@apply text-important;
+		}
+	}
+
+	&:hover,
+	&:focus {
+		@apply text-important;
+	}
+}
+
+body.light .btn {
+	&-cta {
+		@apply !text-white;
+	}
+
+	&-ghost {
+		@apply text-black;
+	}
+}
+
+.hs-button,
+.btn {
+	@apply inline-flex items-center justify-center text-center;
+}
+
+.btn-cta,
+.btn-ghost,
+.hs-button {
+	@apply uppercase font-extrabold tracking-widest rounded-lg text-white;
+	&:hover,
+	&:focus {
+		@apply shadow-button-hover;
+	}
+}
+
+.btn-cta,
+.hs-button {
+	background: var(--primary-gradient);
+
+	&:hover,
+	&:focus {
+		@apply text-white;
+	}
+}
+
+.btn-copy-wrapper {
+	position: sticky;
+	top: 0;
+	left: 100%;
+	height: 0;
+	width: 0;
+	overflow: visible;
+	transform: translateY(-30px) translateX(10px);
+
+	> button {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+}
+
+.btn-copy {
+	@apply flex items-center justify-center
+           text-xs font-semibold text-white bg-orchid py-1 px-2 rounded-lg w-[65px];
+
+	img {
+		@apply h-3 w-3 mr-1 !my-0;
+	}
+
+	span {
+		font-family: 'Inter', sans-serif;
+		@apply !text-white;
+	}
+}
+
+.hs-button {
+	@apply py-2 px-6 text-[15px];
+}
+
+img {
+	@apply object-contain;
+}
+
+/* ------------------------------------------------ */
+/* ----- Typography ----- */
+/* ------------------------------------------------ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	@apply text-important;
+}
+
+.h1,
+.h2,
+.h3,
+.h4 {
+	font-weight: 700;
+}
+
+.h1 {
+	@apply text-[40px] md:text-5xl xl:text-6xl !leading-[1.2];
+}
+
+.h2 {
+	@apply text-4xl xl:text-5xl leading-[1.1];
+}
+
+.h3 {
+	@apply font-semibold text-2xl xl:text-[2rem] leading-[1.2];
+}
+
+.h4 {
+	@apply font-semibold text-2xl;
+}
+
+.h5 {
+	@apply font-semibold text-sm uppercase;
+	letter-spacing: 0.1em;
+}
+
+.text {
+	&-small {
+		@apply text-base;
+	}
+
+	&-medium {
+		@apply text-lg xl:text-xl;
+	}
+
+	&-large {
+		@apply text-xl xl:text-2xl !leading-[1.5] text-sub;
+	}
+}
+
+strong,
+em {
+	@apply font-semibold;
+}
+
+.prose blockquote {
+	@apply !text-sub;
+}
+
+/* ------------------------------------------------ */
+/* ----- Tables, Lists ----- */
+/* ------------------------------------------------ */
+
+thead {
+	@apply text-important;
+}
+
+tr {
+	> :first-child {
+		@apply text-important;
+	}
+}
+
+.gradient-list-container {
+	ul:not(.toc) {
+		@apply mt-4;
+		list-style: none;
+
+		li {
+			@apply relative pl-8;
+
+			&:not(:last-of-type) {
+				@apply mb-2;
+			}
+
+			&::before {
+				content: '—';
+				@apply absolute left-0 top-3.5 h-0.5 bg-clip-text text-transparent;
+				background: var(--primary-gradient);
+			}
+		}
+	}
+}
+
+/* ------------------------------------------------ */
+/* ----- Images and Objects ----- */
+/* ------------------------------------------------ */
+
+img {
+	max-width: 100%;
+	object-fit: contain;
+}
+
+/* ------------------------------------------------ */
+/* ----- Reusable components ----- */
+/* ------------------------------------------------ */
+
+.gradient-border {
+	background: linear-gradient(var(--bg), var(--bg)) padding-box, var(--primary-gradient);
+	background-origin: padding-box, border-box;
+	background-repeat: no-repeat;
+}
+
+.gradient-text {
+	background-image: var(--primary-gradient);
+	@apply bg-clip-text !text-transparent;
+}
+
+.card {
+	@apply bg-card border border-solid border-divider shadow-default;
+}
+
+.link {
+	&-important {
+		@apply text-orange;
+	}
+}

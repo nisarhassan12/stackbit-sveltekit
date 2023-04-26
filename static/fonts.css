@@ -1,0 +1,5 @@
+@font-face {
+  font-family: 'Inter Var';
+  src: url('fonts/inter.var.ttf') format('ttf supports variations'), url('fonts/inter.var.ttf') format('ttf-variations');
+  font-weight: 100 1000;
+}

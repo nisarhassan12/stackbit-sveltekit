@@ -1,0 +1,386 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="436.2" height="164.7" viewBox="0 718 436.2 161.5" fill="none">
+  <style>
+    .line-anim-group path,
+    .line-anim-group line {
+      animation: dash 12s infinite linear;
+    }
+
+    .line-anim-group path.alternate,
+    .line-anim-group line.alternate,
+    .reverse path,
+    .reverse line {
+      animation: dash-reverse 12s infinite linear;
+    }
+
+    @keyframes dash {
+      to {
+        stroke-dashoffset: -450;
+      }
+    }
+
+    @keyframes dash-reverse {
+      to {
+        stroke-dashoffset: 450;
+      }
+    }
+  </style>
+  <g clip-path="url(#clip0_402_2174)">
+    <g class="top-diagram">
+      <rect opacity="0.7" y="716.6" width="436.2" height="164.6" rx="5" fill="url(#paint3_linear_402_2174)" />
+      <rect x="322.5" y="730.5" width="98.4" height="25.3" fill="black" fill-opacity="0.25" />
+      <rect x="221" y="730.5" width="98.4" height="25.3" fill="black" fill-opacity="0.25" />
+      <rect x="119.5" y="730.5" width="98.4" height="25.3" fill="black" fill-opacity="0.25" />
+      <rect x="18" y="730.5" width="98.4" height="25.3" fill="black" fill-opacity="0.25" />
+      <rect x="322.5" y="758.8" width="98.4" height="25.3" fill="black" fill-opacity="0.25" />
+      <rect x="322.5" y="787.1" width="98.4" height="25.3" fill="black" fill-opacity="0.25" />
+      <rect x="322.5" y="815.4" width="98.4" height="25.3" fill="black" fill-opacity="0.25" />
+      <rect x="322.5" y="843.7" width="98.4" height="25.3" fill="black" fill-opacity="0.25" />
+      <rect x="221" y="787.1" width="98.4" height="25.3" fill="black" fill-opacity="0.25" />
+      <rect x="221" y="758.8" width="98.4" height="25.3" fill="black" fill-opacity="0.25" />
+      <rect x="119.5" y="787.1" width="98.4" height="25.3" fill="black" fill-opacity="0.25" />
+      <rect x="221" y="815.4" width="98.4" height="25.3" fill="black" fill-opacity="0.25" />
+      <rect x="221" y="843.7" width="98.4" height="25.3" fill="black" fill-opacity="0.25" />
+      <rect x="18" y="787.1" width="98.4" height="25.3" fill="black" fill-opacity="0.25" />
+      <rect x="119.5" y="758.8" width="98.4" height="25.3" fill="black" fill-opacity="0.25" />
+      <rect x="119.5" y="815.4" width="98.4" height="25.3" fill="black" fill-opacity="0.25" />
+      <rect x="119.5" y="843.7" width="98.4" height="25.3" fill="black" fill-opacity="0.25" />
+      <rect x="18" y="758.8" width="98.4" height="25.3" fill="black" fill-opacity="0.25" />
+      <rect x="18" y="815.4" width="98.4" height="25.3" fill="black" fill-opacity="0.25" />
+      <rect x="18" y="843.7" width="98.4" height="25.3" fill="black" fill-opacity="0.25" />
+    </g>
+
+    <g class="middle-diagram">
+      <text id="cell_1a" x="235" y="778" fill="white" style="font-family: [object Object]">
+        256
+      </text>
+      <text id="cell_2a" x="235" y="804" fill="white" style="font-family: [object Object]">
+        7
+      </text>
+      <text id="cell_3a" x="235" y="832" fill="white" style="font-family: [object Object]">
+        63650
+      </text>
+      <text id="cell_4a" x="235" y="860" fill="white" style="font-family: [object Object]">
+        820
+      </text>
+      <text id="cell_1b" x="340" y="778" fill="white" style="font-family: [object Object]">
+        3148
+      </text>
+      <text id="cell_2b" x="340" y="804" fill="white" style="font-family: [object Object]">
+        3
+      </text>
+      <text id="cell_3b" x="340" y="832" fill="white" style="font-family: [object Object]">
+        69709
+      </text>
+      <text id="cell_4b" x="340" y="860" fill="white" style="font-family: [object Object]">
+        186
+      </text>
+    </g>
+
+    <g class="additional-diagram">
+      <rect x="30.9" y="739.4" width="71.5" height="8.3" fill="white" />
+      <rect x="233.6" y="739.4" width="71.5" height="8.3" fill="white" />
+      <rect x="127.2" y="739.4" width="26.6" height="8.3" fill="white" />
+      <rect x="330" y="739.4" width="38.6" height="8.3" fill="white" />
+      <rect x="30.9" y="766.9" width="44.1" height="8.3" fill="white" fill-opacity="0.2" />
+      <rect x="127.2" y="766.9" width="44.1" height="8.3" fill="white" fill-opacity="0.2" />
+      <rect x="30.9" y="794.9" width="61.4" height="8.3" fill="white" fill-opacity="0.2" />
+      <rect x="127.2" y="794.9" width="73.1" height="8.3" fill="white" fill-opacity="0.2" />
+      <rect x="30.9" y="822.8" width="61.4" height="8.3" fill="white" fill-opacity="0.2" />
+      <rect x="30.9" y="851.1" width="24.1" height="8.3" fill="white" fill-opacity="0.2" />
+      <rect x="127.2" y="822.8" width="23" height="8.3" fill="white" fill-opacity="0.2" />
+      <rect x="127.2" y="851.1" width="54.9" height="8.3" fill="white" fill-opacity="0.2" />
+    </g>
+
+    <g class="bottom-diagram"></g>
+  </g>
+
+  <defs>
+    <linearGradient id="paint0_linear_402_2174" x1="283.874" y1="518.803" x2="115.331" y2="327.468"
+      gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5a34cb" />
+      <stop offset="1" stop-color="#b634cb" />
+    </linearGradient>
+    <linearGradient id="paint1_linear_402_2174" x1="268.166" y1="488.27" x2="139.688" y2="342.419"
+      gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5a34cb" />
+      <stop offset="1" stop-color="#b634cb" />
+    </linearGradient>
+    <linearGradient id="paint2_linear_402_2174" x1="309.398" y1="568.42" x2="75.7478" y2="303.174"
+      gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5a34cb" />
+      <stop offset="1" stop-color="#b634cb" />
+    </linearGradient>
+    <linearGradient id="paint3_linear_402_2174" x1="259.413" y1="981.124" x2="11.2029" y2="641.94"
+      gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5a34cb" />
+      <stop offset="1" stop-color="#b634cb" />
+    </linearGradient>
+    <linearGradient id="paint4_linear_402_2174" x1="94.6964" y1="371.333" x2="243.875" y2="402.462"
+      gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ad00ff" />
+      <stop offset="1" stop-color="#3901e1" />
+    </linearGradient>
+    <linearGradient id="paint5_linear_402_2174" x1="198.446" y1="303.5" x2="2.9474e-05" y2="19.5"
+      gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4512c7" />
+      <stop offset="0.5" stop-color="#59c3ff" />
+      <stop offset="1" stop-color="#75ff86" />
+    </linearGradient>
+    <linearGradient id="paint6_linear_402_2174" x1="461.968" y1="232.667" x2="277.789" y2="-84.5163"
+      gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4512c7" />
+      <stop offset="0.5" stop-color="#59c3ff" />
+      <stop offset="1" stop-color="#75ff86" />
+    </linearGradient>
+    <linearGradient id="paint7_linear_402_2174" x1="205.895" y1="302.294" x2="205.895" y2="186.989"
+      gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6d01ef" />
+      <stop offset="1" stop-color="#5389ed" />
+    </linearGradient>
+    <linearGradient id="paint8_linear_402_2174" x1="188.446" y1="58.8534" x2="208.158" y2="312.145"
+      gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5dcaf2" />
+      <stop offset="1" stop-color="#6201ec" />
+    </linearGradient>
+    <linearGradient id="paint9_linear_402_2174" x1="256.446" y1="304.5" x2="256.446" y2="44.5002"
+      gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5b01ea" />
+      <stop offset="1" stop-color="#4da4c9" />
+    </linearGradient>
+    <linearGradient id="paint10_linear_402_2174" x1="256.446" y1="302" x2="256.446" y2="101"
+      gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5701e9" />
+      <stop offset="1" stop-color="#4993d4" />
+    </linearGradient>
+    <linearGradient id="paint11_linear_402_2174" x1="255.519" y1="292.521" x2="255.52" y2="160.007"
+      gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5201e8" />
+      <stop offset="1" stop-color="#4574ca" />
+    </linearGradient>
+    <linearGradient id="paint12_linear_402_2174" x1="197.102" y1="593.418" x2="172.548" y2="565.543"
+      gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5a34cb" />
+      <stop offset="1" stop-color="#b634cb" />
+    </linearGradient>
+    <linearGradient id="paint13_linear_402_2174" x1="134.151" y1="674.879" x2="102.103" y2="638.497"
+      gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5a34cb" />
+      <stop offset="1" stop-color="#b634cb" />
+    </linearGradient>
+    <linearGradient id="paint14_linear_402_2174" x1="398.461" y1="712.933" x2="366.413" y2="676.551"
+      gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5a34cb" />
+      <stop offset="1" stop-color="#b634cb" />
+    </linearGradient>
+    <linearGradient id="paint15_linear_402_2174" x1="274.197" y1="650.207" x2="224.003" y2="593.225"
+      gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5a34cb" />
+      <stop offset="1" stop-color="#b634cb" />
+    </linearGradient>
+    <linearGradient id="paint16_linear_402_2174" x1="237.932" y1="571.724" x2="256.396" y2="575.576"
+      gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ad00ff" />
+      <stop offset="1" stop-color="#3901e1" />
+    </linearGradient>
+    <linearGradient id="paint17_linear_402_2174" x1="237.932" y1="609.867" x2="256.396" y2="613.72"
+      gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ad00ff" />
+      <stop offset="1" stop-color="#3901e1" />
+    </linearGradient>
+    <linearGradient id="paint18_linear_402_2174" x1="237.932" y1="648.011" x2="256.396" y2="651.864"
+      gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ad00ff" />
+      <stop offset="1" stop-color="#3901e1" />
+    </linearGradient>
+    <linearGradient id="paint19_linear_402_2174" x1="303.722" y1="647.654" x2="322.186" y2="651.507"
+      gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ad00ff" />
+      <stop offset="1" stop-color="#3901e1" />
+    </linearGradient>
+    <linearGradient id="paint20_linear_402_2174" x1="172.239" y1="495.436" x2="190.703" y2="499.289"
+      gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ad00ff" />
+      <stop offset="1" stop-color="#3901e1" />
+    </linearGradient>
+    <linearGradient id="paint21_linear_402_2174" x1="237.932" y1="495.436" x2="256.396" y2="499.289"
+      gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ad00ff" />
+      <stop offset="1" stop-color="#3901e1" />
+    </linearGradient>
+    <linearGradient id="paint22_linear_402_2174" x1="172.239" y1="533.58" x2="190.703" y2="537.433"
+      gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ad00ff" />
+      <stop offset="1" stop-color="#3901e1" />
+    </linearGradient>
+    <linearGradient id="paint23_linear_402_2174" x1="172.239" y1="571.724" x2="190.703" y2="575.576"
+      gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ad00ff" />
+      <stop offset="1" stop-color="#3901e1" />
+    </linearGradient>
+    <linearGradient id="paint24_linear_402_2174" x1="172.044" y1="648.011" x2="190.508" y2="651.864"
+      gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ad00ff" />
+      <stop offset="1" stop-color="#3901e1" />
+    </linearGradient>
+    <linearGradient id="paint25_linear_402_2174" x1="172.141" y1="609.867" x2="190.605" y2="613.72"
+      gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ad00ff" />
+      <stop offset="1" stop-color="#3901e1" />
+    </linearGradient>
+    <linearGradient id="paint26_linear_402_2174" x1="172.907" y1="686.154" x2="191.371" y2="690.007"
+      gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ad00ff" />
+      <stop offset="1" stop-color="#3901e1" />
+    </linearGradient>
+    <linearGradient id="paint27_linear_402_2174" x1="238.601" y1="686.154" x2="257.065" y2="690.007"
+      gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ad00ff" />
+      <stop offset="1" stop-color="#3901e1" />
+    </linearGradient>
+    <linearGradient id="paint28_linear_402_2174" x1="304.293" y1="686.155" x2="322.757" y2="690.008"
+      gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ad00ff" />
+      <stop offset="1" stop-color="#3901e1" />
+    </linearGradient>
+    <linearGradient id="paint29_linear_402_2174" x1="369.987" y1="686.155" x2="388.451" y2="690.008"
+      gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ad00ff" />
+      <stop offset="1" stop-color="#3901e1" />
+    </linearGradient>
+    <linearGradient id="paint30_linear_402_2174" x1="106.351" y1="609.6" x2="124.815" y2="613.453"
+      gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ad00ff" />
+      <stop offset="1" stop-color="#3901e1" />
+    </linearGradient>
+    <linearGradient id="paint31_linear_402_2174" x1="106.351" y1="647.654" x2="124.815" y2="651.507"
+      gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ad00ff" />
+      <stop offset="1" stop-color="#3901e1" />
+    </linearGradient>
+    <linearGradient id="paint32_linear_402_2174" x1="41.5206" y1="647.654" x2="59.9844" y2="651.507"
+      gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ad00ff" />
+      <stop offset="1" stop-color="#3901e1" />
+    </linearGradient>
+    <linearGradient id="paint33_linear_402_2174" x1="107.214" y1="686.155" x2="125.678" y2="690.008"
+      gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ad00ff" />
+      <stop offset="1" stop-color="#3901e1" />
+    </linearGradient>
+    <linearGradient id="paint34_linear_402_2174" x1="41.5206" y1="686.155" x2="59.9844" y2="690.008"
+      gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ad00ff" />
+      <stop offset="1" stop-color="#3901e1" />
+    </linearGradient>
+    <linearGradient id="paint35_linear_402_2174" x1="303.722" y1="533.491" x2="322.186" y2="537.344"
+      gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ad00ff" />
+      <stop offset="1" stop-color="#3901e1" />
+    </linearGradient>
+    <linearGradient id="paint36_linear_402_2174" x1="237.932" y1="533.58" x2="256.396" y2="537.433"
+      gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ad00ff" />
+      <stop offset="1" stop-color="#3901e1" />
+    </linearGradient>
+    <linearGradient id="paint37_linear_402_2174" x1="127.691" y1="887.971" x2="127.691" y2="1113.14"
+      gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7b34cb" />
+      <stop offset="1" stop-color="#ff9068" />
+    </linearGradient>
+    <linearGradient id="paint38_linear_402_2174" x1="119.691" y1="887.971" x2="119.691" y2="1113.14"
+      gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7b34cb" />
+      <stop offset="1" stop-color="#ff9068" />
+    </linearGradient>
+    <linearGradient id="paint39_linear_402_2174" x1="111.691" y1="887.971" x2="111.691" y2="1113.14"
+      gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7b34cb" />
+      <stop offset="1" stop-color="#ff9068" />
+    </linearGradient>
+    <linearGradient id="paint40_linear_402_2174" x1="104" y1="887.971" x2="104" y2="1113.14"
+      gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7b34cb" />
+      <stop offset="1" stop-color="#ff9068" />
+    </linearGradient>
+    <linearGradient id="paint41_linear_402_2174" x1="301.312" y1="887.971" x2="301.312" y2="1113.14"
+      gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7b34cb" />
+      <stop offset="1" stop-color="#ff9068" />
+    </linearGradient>
+    <linearGradient id="paint42_linear_402_2174" x1="325.312" y1="887.971" x2="325.312" y2="1113.14"
+      gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7b34cb" />
+      <stop offset="1" stop-color="#ff9068" />
+    </linearGradient>
+    <linearGradient id="paint43_linear_402_2174" x1="317.312" y1="887.971" x2="317.312" y2="1113.14"
+      gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7b34cb" />
+      <stop offset="1" stop-color="#ff9068" />
+    </linearGradient>
+    <linearGradient id="paint44_linear_402_2174" x1="309.312" y1="887.971" x2="309.312" y2="1113.14"
+      gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7b34cb" />
+      <stop offset="1" stop-color="#ff9068" />
+    </linearGradient>
+    <linearGradient id="paint45_linear_402_2174" x1="16.5305" y1="985.799" x2="103.493" y2="1046.21"
+      gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ad00ff" />
+      <stop offset="1" stop-color="#3901e1" />
+    </linearGradient>
+    <linearGradient id="paint46_linear_402_2174" x1="214.152" y1="985.799" x2="301.114" y2="1046.21"
+      gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ad00ff" />
+      <stop offset="1" stop-color="#3901e1" />
+    </linearGradient>
+    <linearGradient id="paint47_linear_402_2174" x1="123.191" y1="1213.92" x2="78.9332" y2="1132.97"
+      gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5c29f1" />
+      <stop offset="0.5" stop-color="#e37ac2" />
+      <stop offset="0.8" stop-color="#ff9067" />
+    </linearGradient>
+    <linearGradient id="paint48_linear_402_2174" x1="336.731" y1="1197.15" x2="292.644" y2="1146.19"
+      gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5a34cb" />
+      <stop offset="1" stop-color="#b634cb" />
+    </linearGradient>
+    <clipPath id="clip0_402_2174">
+      <rect width="436" height="1259" fill="white" />
+    </clipPath>
+  </defs>
+
+  <script type="text/javascript">
+    <![CDATA[
+    var MINS = [-1024, 3.14159, 54321, 100, -1800, 2.15, 56789, 100];
+var MAXES = [2048, 12.56636, 98765, 1000, 4096, 8.6, 99999, 2000];
+var DIFFS = [4, 0.017453277777777776, 100, 10, 8, 0.023888888888888887, 100, 1];
+
+let prevs = MINS.map(function(diff, idx) { return Math.random() * (MAXES[idx] - MINS[idx]) + MINS[idx]; });
+
+function getRandom(idx) {
+  let current = Math.random() < 0.5 ? prevs[idx] + DIFFS[idx] : prevs[idx] - DIFFS[idx]
+
+  if (current < MINS[idx]) {
+    current = MINS[idx]
+  } else if (current > MAXES[idx]) {
+    current = MAXES[idx]
+  }
+
+  prevs[idx] = current
+
+  return Math.round(current)
+}
+
+setInterval(() => {
+  document.getElementById('cell_1a').textContent = getRandom(0);
+  document.getElementById('cell_2a').textContent = getRandom(1);
+  document.getElementById('cell_3a').textContent = getRandom(2);
+  document.getElementById('cell_4a').textContent = getRandom(3);
+  document.getElementById('cell_1b').textContent = getRandom(4);
+  document.getElementById('cell_2b').textContent = getRandom(5);
+  document.getElementById('cell_3b').textContent = getRandom(6);
+  document.getElementById('cell_4b').textContent = getRandom(7);
+}, 100);
+
+    ]]>
+  </script>
+</svg>
