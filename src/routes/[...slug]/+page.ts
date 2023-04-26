@@ -3,11 +3,7 @@ import { kebabize } from "$lib/utils";
 
 
 export async function load({ data }: any) {
-
-	const { metadata, component_names } = data;
-
-
-
+	const { metadata, component_names, content } = data;
 
 	const components = component_names && await Promise.all(
 		component_names.map((name: any, i: number) =>
@@ -19,6 +15,7 @@ export async function load({ data }: any) {
 
 	return {
 		metadata,
+		content,
 		components,
 	};
 

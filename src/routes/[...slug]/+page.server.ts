@@ -18,8 +18,10 @@ const converter = new Converter();
 export const load = (async ({ params }) => {
 	const data = await getPageDataBySlug(params.slug);
 
-	const { metadata } = data;
+	const { metadata, content } = data;
 	const hasSections = metadata && metadata.sections
+
+	console.log(content);
 
 	const sections_with_content = hasSections && metadata.sections.filter((section: any) => section.loader);
 	const sections_with_item_refs = hasSections && metadata.sections.filter((section: any) => section.item_refs);
@@ -77,8 +79,6 @@ export const load = (async ({ params }) => {
 
 	const component_names = hasSections && metadata.sections.map((item: any) => kebabize(item.type))
 
-
-
 	hasSections && metadata.sections.forEach((section: any) => {
 		Object.keys(section).forEach((key) => {
 			if (key === 'text') {
@@ -121,5 +121,6 @@ export const load = (async ({ params }) => {
 	return {
 		metadata,
 		component_names,
+		content,
 	}
 }) satisfies PageServerLoad;
