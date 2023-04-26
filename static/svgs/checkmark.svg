@@ -1,12 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512" height="16" width="16">
-	<defs>
-		<linearGradient id="paint0_linear_7_1472" x1="512" y1="512" x2="0" y2="0" gradientUnits="userSpaceOnUse">
-			<stop stop-color="#5C29F1" />
-			<stop offset="0.473958" stop-color="#E37AC2" />
-			<stop offset="0.807292" stop-color="#FF9067" />
-		</linearGradient>
-	</defs>
-	<title>Checkmark</title>
-	<path fill="none" stroke="url(#paint0_linear_7_1472)" stroke-linecap="round" stroke-linejoin="round"
-		stroke-width="24" d="M416 128L192 384l-96-96" />
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="ionicon" viewBox="0 0 512 512"><defs><linearGradient id="paint0_linear_7_1472" x1="512" x2="0" y1="512" y2="0" gradientUnits="userSpaceOnUse"><stop stop-color="#5C29F1"/><stop offset=".474" stop-color="#E37AC2"/><stop offset=".807" stop-color="#FF9067"/></linearGradient></defs><title>Checkmark</title><path fill="none" stroke="url(#paint0_linear_7_1472)" stroke-linecap="round" stroke-linejoin="round" stroke-width="24" d="M416 128L192 384l-96-96"/></svg>
