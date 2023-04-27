@@ -124,7 +124,8 @@ export const getAuthor = async (name: string) => {
 		return key.includes(simplified_name);
 	})
 
-	const author = target_key && await allPeopleJSON[`${target_key}`]();
+	const author: any = target_key && await allPeopleJSON[`${target_key}`]();
+
 
 	return author || {};
 }
@@ -137,7 +138,7 @@ export const enrichMetaData = (metadata: any) => {
 			target.forEach(async (ref: any) => {
 				const name = ref;
 				const author = await getAuthor(name);
-				authors.push(author);
+				authors.push(author.default);
 			});
 			metadata.authors = authors;
 		}

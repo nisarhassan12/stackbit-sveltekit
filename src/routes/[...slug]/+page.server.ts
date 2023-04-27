@@ -1,4 +1,3 @@
-import { error } from "@sveltejs/kit";
 import type { PageServerLoad } from "./$types";
 import { getPeople, getPosts, getJobs, getPageDataBySlug, getMetadataBySlug, enrichMetaData, getPeopleByGroup } from "$lib/utils/content";
 
@@ -16,12 +15,14 @@ const converter = new Converter();
 
 
 export const load = (async ({ params }) => {
+	console.log("Server Load Called.")
+
 	const data = await getPageDataBySlug(params.slug);
 
-	const { metadata, content } = data;
-	const hasSections = metadata && metadata.sections
+	const metadata = data.metadata;
+	const content = data.content.render().html;
 
-	console.log(content);
+	const hasSections = metadata && metadata.sections
 
 	const sections_with_content = hasSections && metadata.sections.filter((section: any) => section.loader);
 	const sections_with_item_refs = hasSections && metadata.sections.filter((section: any) => section.item_refs);
