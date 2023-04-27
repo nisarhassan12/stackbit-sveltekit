@@ -1,9 +1,0 @@
-{
-    "type": "Person",
-    "team": "External",
-    "name": "Jamie Brandon",
-    "role": "Software Engineer",
-    "github": "https://example.com",
-    "image":"https://res.cloudinary.com/mzimgcdn/image/upload/v1665546890/anonymous.webp",
-    "bio": "Jamie is an independent researcher who has built database engines, query planners, compilers, developer tools and interfaces for Materialize, RelationalAI, LogicBlox and Eve."
-}

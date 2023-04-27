@@ -1,8 +1,7 @@
-<script lang="ts">
-	import { renderPostLayout } from '../../lib/utils/index';
-
+<script>
 	export let data;
-	const { content, components, currentRoute } = data;
+	console.log(data);
+	const { content, components } = data;
 </script>
 
 {#if components}
@@ -11,10 +10,6 @@
 	{/each}
 {/if}
 
-<div
-	class={!components && !renderPostLayout(currentRoute)
-		? 'post-body gradient-list-container default-post post-layout max-w-3xl mx-auto pt-16 pb-28'
-		: ''}
->
+<div>
 	<svelte:component this={content} />
 </div>
