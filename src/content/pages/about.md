@@ -77,6 +77,7 @@ sections: [
   },
   {
     type: "Section",
+    id: "timeline",
     heading: "Mature Technology, {Long-Term Vision}",
     text: "Materialize builds on frameworks originally developed at Microsoft Research.",
     items_appearance: "timeline",
@@ -126,22 +127,13 @@ sections: [
         "heading": "Series B",
         "icon": "StatsChartOutline",
         "text": "Materialize raises $32M Series B from Kleiner Perkins",
-        "button": {
-          "label": "Read More",
-          "url": "/blog/materialize-series-b/",
-          "variant": "text"
-        }
+
       },
       {
         "eyebrow": "Sep 2021",
         "icon": "StatsChartOutline",
         "heading": "Series C",
         "text": "Materialize Raises $60M Series C from Redpoint",
-        "button": {
-          "label": "Read More",
-          "url": "/blog/materialize-raises-a-series-c/",
-          "variant": "text"
-        }
       },
       {
         "eyebrow": "Oct 2022",

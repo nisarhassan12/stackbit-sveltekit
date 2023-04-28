@@ -155,36 +155,6 @@
 								"icon": "UserGroupIcon"
 							}
 						]
-					},
-					{
-						"type": "LinkList",
-						"heading": "Use Cases",
-						"links": [
-							{
-								"type": "Link",
-								"text": "Real-time Analytics",
-								"url": "/use-cases/real-time-analytics/",
-								"icon": "PresentationChartBarIcon"
-							},
-							{
-								"type": "Link",
-								"text": "Automation & Alerting",
-								"url": "/use-cases/automation-and-alerting/",
-								"icon": "AnnotationIcon"
-							},
-							{
-								"type": "Link",
-								"text": "Segmentation & Personalization",
-								"url": "/use-cases/segmentation-and-personalization/",
-								"icon": "AdjustmentsIcon"
-							},
-							{
-								"type": "Link",
-								"text": "Machine Learning Operations",
-								"url": "/use-cases/machine-learning-ops/",
-								"icon": "BeakerIcon"
-							}
-						]
 					}
 				]
 			},

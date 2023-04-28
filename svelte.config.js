@@ -77,15 +77,11 @@ const config = {
 			crawl: true,
 			entries: [
 				'/',
-				'/use-cases/automation-and-alerting',
-				'/use-cases/machine-learning-ops',
-				'/use-cases/real-time-analytics',
-				'/use-cases/segmentation-and-personalization',
 				'/blog',
 				'/events',
 				'/guides',
-				'/customer-stories',
 				'/careers',
+				'/customer-stories',
 				'/about',
 				'/about/news-and-press'
 			]

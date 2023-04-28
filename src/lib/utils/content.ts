@@ -6,19 +6,6 @@ import fm from 'front-matter';
 
 const JOB_BOARD_URL = 'https://boards-api.greenhouse.io/v1/boards/materialize/jobs?content=true';
 
-const getPostsProd = (type: string) => {
-	const targetPath = path.join(process.cwd(), `/src/content/pages/${type}`);
-	const filenames = fs.readdirSync(targetPath);
-
-	const files = filenames.map((name: string) => {
-		const fullPath = path.join(targetPath, `/${name}`);
-		const file = fs.readFileSync(fullPath, "utf-8");
-		return { path: `${type}/${name.substring(0, name.length - 3)}`, ...(fm(file).attributes as object) };
-	})
-
-	return files;
-}
-
 const mapTypeToMarkdownFiles: any = {
 	blog: import.meta.glob('/src/content/pages/blog/*.md'),
 	guides: import.meta.glob('/src/content/pages/guides/*.md'),
@@ -50,13 +37,7 @@ const getPostsDev = async (type: string) => {
 }
 
 export const getPosts = async (type: postType) => {
-	let allPosts;
-
-	if (import.meta.env.DEV) {
-		allPosts = await getPostsDev(type);
-	} else if (import.meta.env.PROD) {
-		allPosts = getPostsProd(type)
-	}
+	const allPosts = await getPostsDev(type);
 
 	// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 	// @ts-ignore	

@@ -11,8 +11,6 @@ export async function load({ data }: any) {
 		)
 	);
 
-	console.log("Client Load Called.")
-
 	return {
 		metadata,
 		content,

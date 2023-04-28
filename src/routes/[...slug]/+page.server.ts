@@ -15,8 +15,6 @@ const converter = new Converter();
 
 
 export const load = (async ({ params }) => {
-	console.log("Server Load Called.")
-
 	const data = await getPageDataBySlug(params.slug);
 
 	const metadata = data.metadata;

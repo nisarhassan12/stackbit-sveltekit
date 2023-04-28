@@ -8,7 +8,7 @@
 	export let text: string;
 </script>
 
-<SectionBase class="max-w-sm md:max-w-4xl mx-auto">
+<SectionBase class="max-w-sm md:max-w-4xl mx-auto" id="jobs">
 	<Heading type="h2" class="h2 mb-4" text={heading} />
 	<p class="mb-12 text-xl max-w-2xl">{text}</p>
 	{#await promise}

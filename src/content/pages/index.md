@@ -44,46 +44,6 @@ sections: [
 		heading: 'New Use Cases in OLAP need {Correct, Up-To-Date Data.}',
 		text: "Fresh, correct and consistent data is a prequisite to operationalizing OLAP data in your business.",
 		layout: lined,
-		cards: [
-			{
-				"heading": "Real-Time & User-Facing Analytics",
-				"text": "Dashboards and data products need to be reactive to up-to-the-minute changes in your business.",
-				"icon": "https://res.cloudinary.com/mzimgcdn/image/upload/v1680633726/homepage-usecases_RTA.png",
-				"button": {
-					"label": "Read More",
-					"url": "/use-cases/real-time-analytics/"
-				}
-			},
-			{
-				"heading": "Automation and Alerting",
-				"text": "Save time for your users, and build value by taking action or notifying at only the right moments.",
-				"icon": "https://res.cloudinary.com/mzimgcdn/image/upload/v1680633726/homepage-usecases_Alerting.png",
-				"button": {
-					"label": "Read More",
-					"url": "/use-cases/automation-and-alerting/"
-				}
-			},
-			{
-				"heading": "Segmentation and Personalization",
-				"text": "Value of personalization, recommendations, dynamic pricing increases as latency of data aggregations approaches zero.",
-				"icon": "https://res.cloudinary.com/mzimgcdn/image/upload/v1680633726/homepage-usecases_Segmentation.png",
-				"button": {
-					"label": "Read More",
-					"url": "/use-cases/segmentation-and-personalization/"
-				}
-			},
-			{
-				"heading": "ML in Production",
-				"text": "Online feature stores need continually updated data, operators need to monitor and react to changes in ML effectiveness.",
-				"icon": "https://res.cloudinary.com/mzimgcdn/image/upload/v1680633726/homepage-usecases_ML.png",
-				"button": {
-					"label": "Read More",
-					"url": "/use-cases/machine-learning-ops/",
-					"arrow": true,
-					"theme": "mz-btn-link"
-				}
-			}
-		]
 	},
 	{
 		type: "Section",
