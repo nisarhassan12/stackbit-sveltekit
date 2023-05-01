@@ -6,38 +6,24 @@ import fm from 'front-matter';
 
 const JOB_BOARD_URL = 'https://boards-api.greenhouse.io/v1/boards/materialize/jobs?content=true';
 
-const mapTypeToMarkdownFiles: any = {
-	blog: import.meta.glob('/src/content/pages/blog/*.md'),
-	guides: import.meta.glob('/src/content/pages/guides/*.md'),
-	"customer-stories": import.meta.glob('/src/content/pages/customer-stories/*.md'),
-	events: import.meta.glob('/src/content/pages/events/*.md'),
-	"press-releases": import.meta.glob('/src/content/pages/press-releases/*.md'),
-}
-
 type postType = 'blog' | 'guides' | 'customer-stories' | 'events'
 
-const getPostsDev = async (type: string) => {
-	const markdownFiles = mapTypeToMarkdownFiles[type];
+const getAllPosts = (type: string) => {
+	const targetPath = path.join(process.cwd(), `/src/content/pages/${type}`);
+	const filenames = fs.readdirSync(targetPath);
 
-	const iterablePosts = Object.entries(markdownFiles);
+	const files = filenames.map((name: string) => {
+		const fullPath = path.join(targetPath, `/${name}`);
+		const file = fs.readFileSync(fullPath, "utf-8");
+		return { path: `/${type}/${name.substring(0, name.length - 3)}`, ...(fm(file).attributes as object) };
+	})
 
-	const allPosts = await Promise.all(
-		iterablePosts.map(async ([path, resolver]: any) => {
-			const { metadata } = await resolver();
-			const postPath = path.slice(18, -3);
-
-			return {
-				...metadata,
-				path: postPath
-			}
-		})
-	)
-
-	return allPosts
+	return files;
 }
 
+
 export const getPosts = async (type: postType) => {
-	const allPosts = await getPostsDev(type);
+	const allPosts = getAllPosts(type);
 
 	// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 	// @ts-ignore	

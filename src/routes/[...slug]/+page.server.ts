@@ -14,7 +14,7 @@ const { Converter } = showdown;
 const converter = new Converter();
 
 
-export const load = (async ({ params }) => {
+export const load = (async ({ params }: any) => {
 	const data = await getPageDataBySlug(params.slug);
 
 	const metadata = data.metadata;
