@@ -18,7 +18,6 @@ export const load = (async ({ params }) => {
 	const data = await getPageDataBySlug(params.slug);
 
 	const metadata = data.metadata;
-	const content = data.content.render().html;
 
 	const hasSections = metadata && metadata.sections
 
@@ -120,6 +119,5 @@ export const load = (async ({ params }) => {
 	return {
 		metadata,
 		component_names,
-		content,
 	}
 }) satisfies PageServerLoad;
